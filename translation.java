@@ -145,7 +145,7 @@ public class translation{
       aminoAcids.put("Gly", gly);
       aminoAcids.put("Stop", stop);
       String aminoAcidString = "";
-      // WITH SPACES BETWEEN CODONS IN THE DNA SEQUENCE
+      // WITH SPACES BETWEEN CODONS IN THE DNA SEQUENCE (e.g. AGC TAA TGA)
       /*if (RNA.length() >=3){
          for (int i = 0; i < RNA.length(); i+=4){
             String codon = RNA.substring(i, i+3);
@@ -159,7 +159,7 @@ public class translation{
       } else {
          System.out.println("Invalid");
       }*/
-      // NO SPACES IN THE DNA SEQUENCE
+      // NO SPACES IN THE DNA SEQUENCE (e.g. AGCTAATGA)
       if (RNA.length() >=3){
          for (int i = 0; i < RNA.length(); i+=3){
             String codon = RNA.substring(i, i+3);
